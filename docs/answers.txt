@@ -1,0 +1,111 @@
+Inside the answers.txt file make the following annotations at the beginning of the document and save the changes to your repository: 
+
+List the date when you went through the Git Lab Tutorials. 
+I went through the tutorials on October 20th 2023
+Lisst the dates when you setup the GitHub Account.  If this was some time ago a rough estimate will do.
+I think I made my account in September of 2023
+
+
+Paste the console output you saved at the end of step 3.C (2 points)
+PS C:\Users\User\Documents\GitHub\assignment2\assignment2> git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)    
+
+nothing to commit, working tree clean
+PS C:\Users\User\Documents\GitHub\assignment2\assignment2> 
+
+How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+PS C:\Users\User\Documents\GitHub\assignment2\assignment2> git log
+commit 88bbde48fdf5928eb09c60e63c38a2dd9b969385 (HEAD -> master)      
+Author: bedwards2023 <143897958+bedwards2023@users.noreply.github.com>
+Date:   Fri Oct 20 19:09:57 2023 -0500
+
+    Created answers.txt
+
+commit 6cc72d7ea9efe49db456edc9f27a212fdfe45766
+Author: bedwards2023 <143897958+bedwards2023@users.noreply.github.com>
+Date:   Fri Oct 20 19:09:33 2023 -0500
+
+    Update status.txt
+
+commit 2fc5ccaf65d3cc02ffc13a66d83cee59ec81cf44
+Author: bedwards2023 <143897958+bedwards2023@users.noreply.github.com>
+Date:   Fri Oct 20 19:07:40 2023 -0500
+
+I've done three, git log is the command.
+
+When was the README.md  file modified last? Write the git command you used to get this information (4 points)
+I used git log -p -1 README.md
+commit 2fc5ccaf65d3cc02ffc13a66d83cee59ec81cf44
+Author: bedwards2023 <143897958+bedwards2023@users.noreply.github.com>
+Date:   Fri Oct 20 19:07:40 2023 -0500
+
+    Updated Readme file as per instructions
+
+diff --git a/README.md b/README.md
+index e69de29..603d01f 100644
+--- a/README.md
++++ b/README.md
+@@ -0,0 +1,2 @@
++Name: Brittany Edwards
++FSUID: bce20g
+\ No newline at end of file
+
+Mention two reasons why branches are used in a Git repository (4 points)
+
+1.It allows you to work on different parts of a projecy without impacting the main branch. 
+2. You can switch between different branches and work on projects without them interfering with 
+each other.
+
+What is the difference between git log and git status? (4 points)
+
+Git log displays committed snapshots, while git status lets you insepct the working
+directoy and the staging area. 
+
+What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)
+
+PS C:\Users\User\Documents\GitHub\assignment2\assignment2> git log --follow -- Vehicle.h
+commit 03106e92a1e36708334c69dd071088c6d0937b1d
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 11 16:58:59 2019 -0400
+
+    -> Declared the trivial destructors for all classes
+    -> Fully formatted toString methods for all classes
+    -> Added test cases in the main method for testing the implementations
+    -> Added validation on value for engine sizes in the  Car class
+
+commit f9cd890b3f89fbe5920a1fdf7da34ee915ba27b9
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 18:42:39 2019 -0400
+
+    -> Partial implementation of PoweredVehicle and Car
+    -> Definition of virtual functions
+
+What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+PS C:\Users\User\Documents\GitHub\assignment2\assignment2> git log --grep="file"
+commit 2fc5ccaf65d3cc02ffc13a66d83cee59ec81cf44
+Author: bedwards2023 <143897958+bedwards2023@users.noreply.github.com>
+Date:   Fri Oct 20 19:07:40 2023 -0500
+
+    Updated Readme file as per instructions
+
+commit f4975e5d56ff331762b318bfd12c5236e0299f25 (origin/master, origin/HEAD)
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+PS C:\Users\User\Documents\GitHub\assignment2\assignment2> 
+
+In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation? (6 points)
+1. Inheritance allows us to define a class that inherits all the methods and attributes from another class
+2.polymorphism allows us to use a single interface with different forms.
+3.encapsulation describes restricting access to methods and attributes. 
+
+9.  What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow? (5 points)
+The lieutenants act as the integration managers but only for SOME of the developers. 
+Each developer has their own lieutenant. In the integration workflow the integration manager
+handles all the developers. 
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+The dictator can delegate a lot of the work before integrating them. 
